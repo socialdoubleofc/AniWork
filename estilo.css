@@ -1,0 +1,196 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+#menu{
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #ca2e3c;
+	padding: 10px 20px;
+	
+}
+#burger{
+	cursor: pointer;
+}
+#burger div{
+	width: 25px;
+	height: 3px;
+	background-color: #fcfdfb;
+	margin: 3px 0;
+	display: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 10px;
+	color: #fcfdfb;
+	background-color: #ca2e3c;
+
+}
+ul{
+    overflow: hidden;
+    text-align: center;
+	list-style-type: none;
+	display:flex;
+}
+@media (max-width: 768px){
+	ul{
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		background-color: #1b1a1d;
+		width: 100%;
+		transform: translateX(100%);
+		transition: 0.5s;
+	}
+	li{
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		
+	}
+	#burger div{
+		display: block;
+
+	}
+	#linha,#linha2,#linha3{
+		transition: 0.5s;
+
+	}
+	.show{
+		transform: translateX(0);
+	}
+	.linha1Action{
+		transform: translateY(6px) rotate(45deg);
+	}
+	.linha2Action{
+		transform:rotate(405deg);
+	}
+	.linha3Action{
+		transform: translateY(-6px) rotate(675deg);
+	}
+}
+
+
+
+
+
+h1{
+	font-size: 50px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h2{
+    color: #fcfdfb;
+	font-size: 25px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4{
+    color: #b1b1b1;
+	font-size: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conteinerimg{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.conteinerimg img{
+    max-width: 100%;
+    
+}
+
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+  }
+
+  .thefour {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+  }
+
+  .logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 2%;
+  }
+.banner{
+background-size: 100%;
+overflow-x: hidden;
+display:flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+
+
+
+
+
+
+<style>
+a:link {
+  color: #fcfdfb;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fcfdfb;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fcfdfb;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fcfdfb;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.OpacityEffect {
+	opacity: 0;
+	transition: opacity 1.6s;
+}
+
+.fade-in {
+	opacity: 1;
+}
+
+</style>

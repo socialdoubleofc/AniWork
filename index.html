@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prévia de Notícias</title>
+      <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        .news-container {
+            width: 600px;
+            height: 140px;
+            border: 1px solid #ca2e3c;
+            margin-bottom: 20px;
+            display: flex;
+            background-color: #a1111e;
+        }
+
+        .news-image {
+            width: 30%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            image-orientation: center;
+        }
+
+        .news-content {
+            width: 70%;
+            padding: 10px;
+        }
+
+        .news-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .news-description {
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', function() {
+        var OpacityEffect = document.querySelector('.OpacityEffect');
+        setTimeout(function() {
+            OpacityEffect.classList.add('fade-in');
+        }, 100);
+    });
+
+</script>
+
+<body style="background-color: #35084b;">
+
+    <div id="menu">
+        <div id="container-menu">
+            <div id="burger">
+                <div id="linha1"></div>
+                <div id="linha2"></div>
+                <div id="linha3"></div>
+            </div>
+            
+            
+            <ul>
+                <li><a href="LoginScreen.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Login</font></a></li>
+                <li><a href="PerfilScreen.HTML"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Perfil</font></a></li>
+                <li><a href="index.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">News</font></a></li>
+                <li><a href="mailto:socialdoubleofc@gmail.com?subject=Escreva sua dúvida&body=Escreva com detalhes sua dúvida," style="color:#fcfdfb">Ajuda</a></li>
+            </ul>
+          
+        </div>
+    </div>
+    
+    <br><br>
+
+<div class="OpacityEffect">
+    <center>
+    <div class="news-container">
+        <div class="news-image" style="background-image: url('Imagens/NewsImageTest.png');"></div>
+        <div class="news-content">
+            <h2 class="news-title">Título da Notícia 1</h2>
+            <p class="news-description">Descrição da Notícia 1</p>
+        </div>
+    </div>
+
+    <div class="news-container">
+        <div class="news-image" style="background-image: url('Imagens/NewsImageTest.png');"></div>
+        <div class="news-content">
+            <h2 class="news-title">Título da Notícia 2</h2>
+            <p class="news-description">Descrição da Notícia 2</p>
+        </div>
+    </div>
+
+    <div class="news-container">
+        <div class="news-image" style="background-image: url('Imagens/NewsImageTest.png');"></div>
+        <div class="news-content">
+            <h2 class="news-title">Título da Notícia 3</h2>
+            <p class="news-description">Descrição da Notícia 3</p>
+        </div>
+    </div>
+
+    <div class="news-container">
+        <div class="news-image" style="background-image: url('Imagens/NewsImageTest.png');"></div>
+        <div class="news-content">
+            <h2 class="news-title">Título da Notícia 4</h2>
+            <p class="news-description">Descrição da Notícia 4</p>
+        </div>
+    </div>
+
+    <div class="news-container">
+        <div class="news-image" style="background-image: url('Imagens/NewsImageTest.png');"></div>
+        <div class="news-content">
+            <h2 class="news-title">Título da Notícia 5</h2>
+            <p class="news-description">Descrição da Notícia 5</p>
+        </div>
+    </div>
+
+    </center>
+</div>
+
+</body>
+</html>

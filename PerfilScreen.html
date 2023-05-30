@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfil do Usuário</title>
+    <style>
+        .profile {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .profile img {
+            width: 225px;
+            height: 225px;
+            border-radius: 50%;
+        }
+
+        .profile .change-photo {
+            margin-top: 10px;
+            color: white;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .profile .change-photo input[type="file"] {
+            display: none;
+        }
+
+        .profile .change-photo label {
+            cursor: pointer;
+            color: white;
+        }
+
+        .profile .username {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .profile .edit-icon {
+            cursor: pointer;
+            color: white;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+
+        .profile .description {
+            margin-top: 20px;
+            margin-left: 350px; /* Adiciona uma margem esquerda */
+            margin-right: 350px; /* Adiciona uma margem direita */
+            word-wrap: break-word; /* Adiciona quebra de palavra */
+            font-size: 14px;
+            color: white;
+        }
+
+        .profile .edit-description {
+            margin-top: 10px;
+        }
+
+        .EditarPerfilEstilo {
+        cursor: pointer;
+        color: white;
+        margin-left: 5px;
+        font-size: 12px;
+        }
+    </style>
+        <link rel="stylesheet" href="estilo.css">
+
+        <script>
+
+            window.addEventListener('DOMContentLoaded', function() {
+                var OpacityEffect = document.querySelector('.OpacityEffect');
+                setTimeout(function() {
+                    OpacityEffect.classList.add('fade-in');
+                }, 100);
+            });
+        
+        </script>
+
+</head>
+
+<body style="background-color: #35084b;">
+    
+        <div id="menu">
+            <div id="container-menu">
+                <div id="burger">
+                    <div id="linha1"></div>
+                    <div id="linha2"></div>
+                    <div id="linha3"></div>
+                </div>
+                
+                
+                <ul>
+                    <li><a href="LoginScreen.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Login</font></a></li>
+                    <li><a href="PerfilScreen.HTML"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Perfil</font></a></li>
+                    <li><a href="index.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">News</font></a></li>
+                    <li><a href="mailto:socialdoubleofc@gmail.com?subject=Escreva sua dúvida&body=Escreva com detalhes sua dúvida," style="color:#fcfdfb">Ajuda</a></li>
+                </ul>
+              
+            </div>
+        </div>
+
+
+
+<div class="OpacityEffect">
+
+    <div class="profile">
+        <img src="Imagens/default_profile_image.png" alt="Foto do Perfil">
+        
+        <div class="change-photo">
+            <input type="file" id="photo-upload" onchange="changePhoto(event)">
+        </div>
+
+            <h2 class="username">Usuário</h2> 
+            
+            <a href="PerfilEditScreen.html"<span class="EditarPerfilEstilo">Editar Perfil✎</span></a>    
+            
+            <br><br>
+            
+            <p class="description">Este é um exemplo de resumo de perfil do usuário</p>
+           
+            <br>
+
+    </div>
+</div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>

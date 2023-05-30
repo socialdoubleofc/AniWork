@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+    .registrarAgora {
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+    font-size: 10px;
+    }
+    </style>
+
+</head>
+
+        <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var OpacityEffect = document.querySelector('.OpacityEffect');
+            setTimeout(function() {
+                OpacityEffect.classList.add('fade-in');
+            }, 100);
+        });
+        </script>
+
+    <body style="background-color: #35084b;">
+    
+        <div id="menu">
+            <div id="container-menu">
+                <div id="burger">
+                    <div id="linha1"></div>
+                    <div id="linha2"></div>
+                    <div id="linha3"></div>
+                </div>
+                
+                
+                
+                <ul>
+                    <li><a href="LoginScreen.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Login</font></a></li>
+                    <li><a href="PerfilScreen.HTML"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">Perfil</font></a></li>
+                    <li><a href="index.html"style="color:#fcfdfb;;"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">News</font></a></li>
+                    <li><a href="mailto:socialdoubleofc@gmail.com?subject=Escreva sua dúvida&body=Escreva com detalhes sua dúvida," style="color:#fcfdfb">Ajuda</a></li>
+
+                </ul>
+              
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="OpacityEffect">
+            <center>
+                <img src="Imagens/AniworkLogo.png" alt="AniWork" width="380px" height="380px"> <br><br><br><br>
+                <h2>Faça seu Login</h2> <br>
+                <form method="post" action="login.php">
+                    <input type="text" name="login" placeholder="Login" required><br><br>
+                    <input type="password" name="senha" placeholder="Senha" required><br><br>
+                    <a href="RegistrarScreen.html"><font face="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif">
+                        <span class="registrarAgora">Não tem uma conta? Registre-se Agora!</span></font></a>    <br>
+                    <input type="submit" value="Entrar">
+                </form>
+            </center>
+        </div>
+
+
+    
+</body>
+</html>
