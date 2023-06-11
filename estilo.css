@@ -6,6 +6,9 @@
 }
 body{
 	overflow-x: hidden;
+	background-image: url(Imagens/fundosite.jpg);
+	background-size: cover;
+	align-content: center;
 }
 #menu{
 	display:flex;
@@ -127,8 +130,6 @@ h4{
 
 .center {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	width: 20%;
   }
 
@@ -154,11 +155,6 @@ justify-content: space-between;
 }
 
 
-
-
-
-
-<style>
 a:link {
   color: #fcfdfb;
   background-color: transparent;
@@ -187,10 +183,48 @@ a:active {
 .OpacityEffect {
 	opacity: 0;
 	transition: opacity 1.6s;
+	background: #0000005d ;
+	width: 380px;
+	margin: 20px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction:column ;
+	align-items: center;
+	text-align: center;
 }
 
+.registrarAgora{
+	display: flex;
+    flex-direction: column;
+}
+
+.login.php{
+	display: flex;
+    flex-direction: column;
+	margin: 25px;
+}
+
+.AdeHjTapago{
+	margin-top: 2px;
+	align-content: center;
+}
+
+.botoesxdxdxd{
+	display: flex;
+	flex-direction:column ;
+	align-items: center;
+	text-align: center;
+	margin: 20px;
+	margin-bottom: 25px;
+}
 .fade-in {
 	opacity: 1;
 }
 
-</style>
+.vaitomarnocunoia{
+	border-radius: 20px;
+}
+
+.vaitomarnocunoia2 img{
+	border-radius: 20px;
+}
